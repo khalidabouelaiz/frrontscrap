@@ -1,0 +1,82 @@
+/* Styles globaux */
+.boody {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Styles pour les titres */
+h1 {
+  text-align: center;
+  color: #422800;
+  margin-top: 30px;
+}
+
+.titredat,
+.titrechoix {
+  margin: 20px 0;
+  padding: 5px;
+  background-color: #fbeee0;
+  color: #422800;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Styles pour le sélecteur de date */
+.datee {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.datee .react-datepicker-wrapper {
+  flex-grow: 1;
+}
+
+.datee .react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #422800;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  margin-bottom: 10px; /* Ajoute un espace sous les inputs si ils passent à la ligne en dessous */
+}
+
+/* Styles pour les boutons des restaurants */
+.restaurant-buttons {
+  text-align: center;
+}
+
+.button-74 {
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.button-74:hover,
+.button-74:focus {
+  background-color: #422800;
+  color: #fbeee0;
+  border-color: #fbeee0;
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+  .datee .react-datepicker-wrapper {
+    flex-basis: 100%;
+  }
+
+  .button-74 {
+    width: 100%; /* Les boutons prennent toute la largeur */
+    margin: 10px 0; /* Plus d'espace entre les boutons */
+  }
+}
